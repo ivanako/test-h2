@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: false
+
+server:
+  port: 9200
+
+connectors:
+  configs:
+  - name: sap
+    code: sap
+    url: http://127.0.0.1:9201
+    resource: send
+  - name: sinch
+    code: sin
+    url: http://127.0.0.1:9202
+    resource: send

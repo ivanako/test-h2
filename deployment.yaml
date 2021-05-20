@@ -1,0 +1,13 @@
+environments:
+- name: CERT
+  regions:
+  - name: DEV
+    type: ose3
+    properties:
+      ose3Region: https://api.ocp.ccc.srvb.cn1.paas.cloudcenter.corp:8443
+      ose3Project: ccc-cam-poc-dev
+      ose3Application: c3cam-sms-poc-gateway
+      ose3TokenCredentialId: token-cn1-ccc-cam-poc-dev
+      ose3Template: javase-11
+      ose3TemplateParams:
+        ARTIFACT_URL: ${ARTIFACT_NEXUS_URL}

@@ -1,0 +1,42 @@
+########################  PoC connector  ########################
+
+# spring:
+#  application:
+#    name: '@project.name@'
+#    artifact: '@project.artifactId@'
+#    version: '@project.version@'
+#    description: '@project.description@'
+#   datasource:
+#     url: jdbc:h2:mem:testdb
+#     driverClassName: org.h2.Driver
+#     username: pepe
+#     password: pepito
+#   jpa:
+#     database-platform: org.hibernate.dialect.H2Dialect
+#   h2:
+#     console:
+#       enabled: true
+
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: refresh, info, health
+
+#proxy:
+#  host: proxyapp.cloudcenter.corp
+#  port: 8080
+
+# server:
+#   port: 9000
+
+# connectors:
+#   configs:
+#   - name: sap
+#     code: sap
+#     url: http://c3cam-connector-sap-svc:8080
+#     resource: send
+#   - name: sinch
+#     code: sin
+#     url: http://c3cam-connector-sinch-svc:8080
+#     resource: send
